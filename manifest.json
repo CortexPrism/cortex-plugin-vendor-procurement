@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-vendor-procurement",
-  "version": "1.0.0",
-  "description": "Vendor & Procurement Manager — Contract tracking, renewal dates, vendor research, RFP generation",
+  "version": "1.0.1",
+  "description": "Vendor & Procurement Manager \u2014 Contract tracking, renewal dates, vendor research, RFP generation",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,22 +9,40 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-vendor-procurement",
   "homepage": "https://cortexprism.io/marketplace/plugins/vendor-procurement",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "vendor_track_contracts",
       "description": "Track vendor contracts and renewals",
       "params": []
     },
-    { "name": "vendor_research", "description": "Research alternative vendors", "params": [] },
+    {
+      "name": "vendor_research",
+      "description": "Research alternative vendors",
+      "params": []
+    },
     {
       "name": "vendor_generate_rfp",
       "description": "Generate RFP from requirements",
       "params": []
     },
-    { "name": "vendor_compare_proposals", "description": "Compare vendor proposals", "params": [] }
+    {
+      "name": "vendor_compare_proposals",
+      "description": "Compare vendor proposals",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
